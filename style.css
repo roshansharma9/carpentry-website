@@ -1,64 +1,110 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: #111;
 }
 
-header {
-  background: brown;
+/* NAVBAR */
+.navbar {
+  position: absolute;
+  width: 100%;
+  padding: 25px 60px;
+  display: flex;
+  justify-content: space-between;
   color: white;
-  text-align: center;
-  padding: 20px;
+  z-index: 10;
 }
 
-nav {
-  background: #333;
-  text-align: center;
-  padding: 10px;
-}
-
-nav a {
+.navbar a {
   color: white;
-  margin: 0 15px;
+  margin-left: 25px;
   text-decoration: none;
+  font-weight: 400;
 }
 
+/* HERO */
 .hero {
-  text-align: center;
-  padding: 50px;
-  background: #f4f4f4;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
 }
 
+.hero-content {
+  max-width: 500px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 60px;
+  line-height: 1.1;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* BUTTON */
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  background: brown;
-  color: white;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: white;
+  color: black;
   text-decoration: none;
-  margin-top: 10px;
+  font-weight: 500;
 }
 
-section {
-  padding: 40px;
-  text-align: center;
-}
-
-.cards {
+/* FEATURES */
+.features {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 80px 40px;
+  background: #f8f8f8;
 }
 
-.card {
-  background: #eee;
-  padding: 20px;
-  width: 250px;
-  border-radius: 10px;
+.feature h3 {
+  font-size: 28px;
 }
 
-footer {
-  background: #222;
-  color: white;
+/* IMAGE + TEXT */
+.image-section {
+  display: flex;
+  align-items: center;
+}
+
+.img-box {
+  width: 50%;
+  height: 400px;
+  background: url("https://images.unsplash.com/photo-1582582494700-4b5d4b53cbe2") center/cover;
+}
+
+.text-box {
+  width: 50%;
+  padding: 60px;
+}
+
+/* CTA */
+.cta {
   text-align: center;
-  padding: 15px;
+  padding: 80px;
+  background: black;
+  color: white;
+}
+
+.btn-dark {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
 }
